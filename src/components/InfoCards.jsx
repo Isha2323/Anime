@@ -79,7 +79,7 @@ function InfoCards() {
               <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
               <p className="text-gray-600 mb-4">{card.info}</p>
               <button
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                className="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition"
                 onClick={(e) => {
                   e.stopPropagation(); // Prevent the click event from bubbling up
                   handleCardClick(card.id); // Toggle the selected card
