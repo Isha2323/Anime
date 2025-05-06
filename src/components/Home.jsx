@@ -11,7 +11,11 @@ function Home({ image, title, info }) {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-6 p-6 mt-10">
+    <div
+      div
+      id="home"
+      className="flex flex-col lg:flex-row items-center gap-6 p-6 mt-10"
+    >
       {/* Image Section */}
       <div
         className={`transition-transform duration-1000 transform ${

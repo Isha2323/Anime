@@ -19,13 +19,13 @@ function Nav() {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
           <a
-            href="#"
+            href="#home"
             className="text-white text-lg hover:text-yellow-300 transition duration-300"
           >
             Home
           </a>
           <a
-            href="#"
+            href="#InfoCards"
             className="text-white text-lg hover:text-yellow-300 transition duration-300"
           >
             Characters
@@ -37,7 +37,7 @@ function Nav() {
             Series
           </a>
           <a
-            href="#"
+            href="#Footer"
             className="text-white text-lg hover:text-yellow-300 transition duration-300"
           >
             Contact

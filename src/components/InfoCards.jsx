@@ -63,7 +63,10 @@ function InfoCards() {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div
+        id="InfoCards"
+        className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
         {cards.map((card, index) => (
           <div
             key={card.id}

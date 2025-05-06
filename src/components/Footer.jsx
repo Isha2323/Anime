@@ -10,7 +10,10 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-purple-700 via-pink-600 to-red-500   text-white py-8 mt-auto">
+    <footer
+      id="Footer"
+      className="bg-gradient-to-r from-purple-700 via-pink-600 to-red-500   text-white py-8 mt-auto"
+    >
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
           {/* Footer Left */}
@@ -19,6 +22,8 @@ export default function Footer() {
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} MyAnimeSite. All rights reserved.
             </p>
+            <p className="text-sm text-gray-400">Contact:+91 11111 11111</p>
+            <p className="text-sm text-gray-400">Email:abc@email.com</p>
           </div>
 
           {/* Footer Right - Social Media Icons */}
