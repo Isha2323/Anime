@@ -65,21 +65,24 @@ function InfoCards() {
     <>
       <div
         id="InfoCards"
-        className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6"
+        className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
       >
         {cards.map((card, index) => (
           <div
             key={card.id}
-            className="bg-white shadow-md rounded-lg overflow-hidden my-20 transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+            className="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl"
             ref={(el) => (cardRefs.current[index] = el)}
           >
             <img
               src={card.image}
               alt={card.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-60 object-cover" // Increased height to make the card bigger
             />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
+            <div className="p-6">
+              {" "}
+              {/* Increased padding for more spacing */}
+              <h3 className="text-xl font-semibold mb-3">{card.title}</h3>{" "}
+              {/* Increased margin */}
               <p className="text-gray-600 mb-4">{card.info}</p>
               <button
                 className="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition"
