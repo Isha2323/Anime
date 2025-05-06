@@ -1,0 +1,15 @@
+import React from "react";
+
+function MoreInfo({ title }) {
+  return (
+    <div className="p-6 bg-yellow-100 border border-yellow-300 rounded-lg shadow-md">
+      <h2 className="text-xl font-bold mb-2">{title} Details</h2>
+      <p>
+        This is extra information about <strong>{title}</strong>. You can add
+        more detailed content here.
+      </p>
+    </div>
+  );
+}
+
+export default MoreInfo;
